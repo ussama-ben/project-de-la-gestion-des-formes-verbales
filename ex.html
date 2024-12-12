@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex.css">
+    <title>devoir</title>
+</head>
+<body>
+    <!-- Navigation Buttons -->
+    <span id="btn1">◀ </span>
+    <span id="btn2">▶</span>
+    
+    <!-- Header Section -->
+    <div class="head">
+        <span>English: Irregular verbs</span>
+    </div>
+
+    <div id="body">
+        <!-- Left Panel with Verb Table -->
+        <div id="leftpanel">
+            <table id="verbtable">
+                <thead>
+                    <tr>
+                        <th class="taill1">Base Form</th>
+                        <th class="taill1">Past Tense</th>
+                        <th id="taill2">Past Participle</th>
+                        <th id="taill3">Translation</th>
+                        <th id="taill4"> </th>
+                    </tr>
+                </thead>
+                <tbody id="verbsTable">
+                    <!-- Table rows will be inserted dynamically -->
+                </tbody>
+            </table>     
+        </div>
+
+        <!-- Right Panel with Controls -->
+        <div id="rightpanel">
+            <div class="bluebar">
+                <span id="btn3">▶</span>
+                <span id="btn4" hidden>◀</span>
+            </div>
+            
+            <!-- Header with Buttons and Input -->
+            <header>
+                <button id="add">Add a Verb</button>
+                <input type="text" id="inputverb" placeholder="verb to find.">
+                <button id="find">Find</button>
+            </header>
+            
+            <!-- Verb Links List -->
+            <div class="list">
+                <ul></ul>
+            </div>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <p></p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="ex.js"></script>
+</body>
+</html>
